@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/fc7f739b97.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <audio controls hidden>
+        <source src="" id="">
+    </audio>
+    <div class="container">
+        <div class="controls">
+            <button class="backward">
+                <i class="fa-solid fa-backward" style="color: #e65a1e; font-size: large;"></i>
+            </button>
+            <button class="play">
+                <div class="i-play">
+                    <i class="fa-solid fa-play" style="color: #e65a1e; font-size: large;"></i>
+                </div>
+                <div class="pause">
+                    <i class="fa-solid id_pause" style="color: #e65a1e; font-size: large;"></i>
+                </div>
+            </button>
+            <button class="forward">
+                <i class="fa-solid fa-forward" style="color: #e65a1e; font-size: large;"></i>
+            </button>
+        </div>
+        <input type="range" value="1" step="0.1" name="songrange" id="songrange">
+        <div class="time">
+            <span class="currenttime"></span>
+            <span class="totaltime"></span>
+        </div>
+        <div class="addition">
+            <input type="file" accept="audio/*" class="audio">
+            <i class="fa-solid fa-list-ul listbtn" style="color: #1e1c1b;"></i>
+        </div>
+        <p class="error">NOT FOUND</p>
+    </div>
+    <div class="list">
+        <div class="music">
+            <p>Audio1.mp3</p>
+            <i class="fa-solid fa-play"></i>
+        </div>
+    
+    </div>
+    <script src="data/data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
